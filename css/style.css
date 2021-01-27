@@ -6,3 +6,10 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+/* Gives a Clean start: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
