@@ -1,4 +1,4 @@
-# Portfolio - My personal project
+# Natours
 - **Start Date:** 27.01.2021
 
 ## Brief
