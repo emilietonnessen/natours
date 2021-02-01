@@ -1,6 +1,5 @@
 .row {
     max-width: $grid-width;
-    background-color: #eee;
     margin: 0 auto;
     
     &:not(:last-child) { // All the children, except the last child
@@ -10,7 +9,6 @@
     @include clearfix;
 
     [class^="col-"] { // ^ = Starts with.. $ = ends with.. 
-        background-color: rgb(250, 35, 71);
         float: left;
 
         &:not(:last-child) {
