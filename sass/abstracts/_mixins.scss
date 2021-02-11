@@ -23,7 +23,6 @@
  1200px - 1800px  :       Normal Styles
  1800px +         :       Big Desktop
 
-
 $breakpoint argument choices:
 - phone
 - tab-port
@@ -31,6 +30,7 @@ $breakpoint argument choices:
 - big-desktop
 */
 
+// Dont use pixels in meadia queries!
 $phone: 37.5em;          // 600px    (600/16 = 37.5)
 $tab-port: 56.25em;      // 900px    (900/16 = 56.25)
 $tab-land: 75em;         // 1200ox   (1200/16 = 75)
