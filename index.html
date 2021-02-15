@@ -4,6 +4,7 @@
         <!-- Techinal: -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
         <!-- Font: -->
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
@@ -16,15 +17,13 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+        <!-- Navigation -->
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
             <label for="navi-toggle" class="navigation__button">
                 <span class="navigation__icon">&nbsp;</span>
             </label>
-
             <div class="navigation__background">&nbsp;</div>
-
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
@@ -36,9 +35,7 @@
             </nav>
         </div>
 
-
-
-
+        <!-- Header -->
         <header class="header">
             <div class="header__logo-box">
                 <img src="./img/logo-white.png" alt="Natours Logo" class="header__logo">
@@ -52,9 +49,10 @@
             </div>
         </header>
         
+        <!-- Main Content: -->
         <main>
-
             
+            <!-- About Section: -->
             <section class="section-about">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="heading-secondary">
@@ -99,6 +97,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Features Section: -->
             <section class="section-features">
                 <div class="row">
                     <div class="col-1-of-4">
@@ -140,6 +140,7 @@
                 </div>
             </section>
 
+            <!-- Tours Section: -->
             <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="heading-secondary">
@@ -254,11 +255,13 @@
                     </a>
                 </div>
             </section>
+
+            <!-- Stories Section: -->
             <section class="section-stories">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
-                        <source src="./img/video.mp4" type="video/mp4">
-                        <source src="./img/video.webm" type="video/webm">
+                        <source srcset="./img/video.mp4" type="video/mp4">
+                        <source srcset="./img/video.webm" type="video/webm">
                             Your browser is not supported!
                     </video>
                 </div>
@@ -309,6 +312,8 @@
                     <a href="#" class="btn-text">Read all stories &rarr;</a>
                 </div>
             </section>
+
+            <!-- Booking Section: -->
             <section class="section-book">
                 <div class="row">
                     <div class="book">
@@ -350,10 +355,12 @@
                 </div>
             </section>
         </main>
+
+        <!-- Footer: -->
         <footer class="footer">
             <div class="footer__logo-box">
                 <picture class="footer__logo">
-                    <source  srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)" src="img/logo-green-small-2x.pn">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)" src="img/logo-green-small-2x.pn">
                     <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full Logo" class="footer__logo">
                 </picture>
             </div>
@@ -376,6 +383,8 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Popup -->
         <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
