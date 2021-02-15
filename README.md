@@ -14,11 +14,7 @@ This is a project created to follow the course "Advanced CSS and SASS: Flexbox, 
 - Working Navigation (JavaScript)
 - Clicking outside of the popup element should close it
 
-##### Course Link
-https://www.udemy.com/course/advanced-css-and-sass/ 
-
-##### Live Demo
-https://www.tonnessen.com/projects/natours
-
-##### Portfolio Website
-https://www.tonnessen.com/
+## Links
+**Course Link:** https://www.udemy.com/course/advanced-css-and-sass/ 
+**Live Demo:** https://www.tonnessen.com/projects/natours
+**Portfolio Website:** https://www.tonnessen.com/
