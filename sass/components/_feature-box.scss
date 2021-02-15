@@ -21,9 +21,13 @@
                 $color-primary-light, 
                 $color-primary-dark
             );
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
+        color: $color-primary;
+
+        @supports (background-clip: text) or (-webkit-background-clip: text) {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
         
         @include respond(tab-port) {
             margin-bottom: 0;

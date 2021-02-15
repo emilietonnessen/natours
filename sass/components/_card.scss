@@ -14,6 +14,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
@@ -64,10 +65,13 @@
         background-size: cover;
         height: 23rem;
         background-blend-mode: screen;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
 
         &--1 {
             background-image: 
@@ -99,8 +103,12 @@
 
     &__heading-span {
         padding: 1rem 1.5rem;
-        box-decoration-break: clone;
-        -webkit-box-decoration-break: clone;
+        
+
+        @supports (box-decoration-break: clone) or (-webkit-box-decoration-break: clone) {
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
 
         &--1 {
             background-image: linear-gradient(

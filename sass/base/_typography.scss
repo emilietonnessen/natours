@@ -55,11 +55,15 @@ body {
             $color-primary-light, 
             $color-primary-dark
         );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: $color-primary;
     letter-spacing: 2px;
     transition: all .2s;
+
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 
     @include respond(tab-port) {
         font-size: 3rem;
